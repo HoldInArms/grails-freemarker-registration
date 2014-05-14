@@ -10,15 +10,12 @@ class LoginController {
 		def user = User.findByUsernameAndPassword( params.username, params.password );
 		
 		if( user != null ){
-			System.out.println( "Not null" );
+			redirect( controller : "UserList", action : "index" );
 		}else{
 			System.out.println( "Null" );
-		}
+			redirect( uri: "/");
+		}	
 		
-		redirect(action: "index");
 	}
-	
-	def toRegistration() {
-		redirect( controller: "Registration", action: "index" );
-	}
+
 }
