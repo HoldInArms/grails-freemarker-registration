@@ -1,10 +1,10 @@
 <html>
 	<head>
-		<title>Login</title>
+		<title>Registration</title>
 	</head>
 	<body>
 	
-	<form action="login">
+	<form action="registration">
 		<table>
 			<tr>
 				<td>
@@ -23,15 +23,20 @@
 				</br>
 			</tr>
 			<tr>
+				<td>
+					E-mail:
+				</td>
+				<td>
+					<input type="email" name="email">
+				</td>
+			</tr>
+			<tr>
 				<td colspan="2">
-					<input type="submit">
+					<input type="submit" value="Registration">
 				</td>
 			</tr>
 		</table>
 	</form>
-	
-	<br/>
-	<a href="toRegistration">Registration</a>
 
 	</body>
 </html>
