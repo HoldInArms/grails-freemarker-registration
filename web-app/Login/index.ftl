@@ -31,7 +31,7 @@
 	</form>
 	
 	<br/>
-	<a href="toRegistration">Registration</a>
+	<a href="registration">Registration</a>
 
 	</body>
 </html>
