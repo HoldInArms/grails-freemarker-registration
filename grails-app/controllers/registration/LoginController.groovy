@@ -7,7 +7,13 @@ class LoginController {
 	}
 	
 	def login() {
-		System.out.println( params.username +" "+ params.password );
+		def user = User.findByUsernameAndPassword( params.username, params.password );
+		
+		if( user != null ){
+			System.out.println( "Not null" );
+		}else{
+			System.out.println( "Null" );
+		}
 		
 		redirect(action: "index");
 	}
