@@ -10,6 +10,7 @@ class LoginController {
 		def user = User.findByUsernameAndPassword( params.username, params.password );
 		
 		if( user != null ){
+			session.user = user;
 			redirect( controller : "UserList", action : "index" );
 		}else{
 			System.out.println( "Null" );
