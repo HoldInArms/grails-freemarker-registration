@@ -2,16 +2,15 @@ package registration
 
 class UserListController {
 	
-	def beforeInterceptor = [action:this.&auth, except:["index"]]
-	
-	def auth(){
+	def beforeInterceptor = {
 		if(!session.user){
-			redirect(uri:"/login");
-			return false;
+			redirect(uri:"/")
+			return false
 		}
 	}
 
     def index() {
 		[ Users : User.list() ]
 	}
+	
 }

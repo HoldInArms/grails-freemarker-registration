@@ -22,6 +22,9 @@
 				</#list>
 			</tbody>
 		</table>
+		
+		<br/>
+		<a href="auth/logout">Logout<a/>
 	
 	</body>
 </html>

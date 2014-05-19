@@ -4,7 +4,7 @@
 	</head>
 	<body>
 	
-	<form action="registration/registration">
+	<form action="auth/registration">
 		<table>
 			<tr>
 				<td>

@@ -4,7 +4,7 @@
 	</head>
 	<body>
 	
-	<form action="login">
+	<form action="auth/login">
 		<table>
 			<tr>
 				<td>

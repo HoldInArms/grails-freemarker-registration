@@ -18,5 +18,10 @@ class LoginController {
 		}	
 		
 	}
+	
+	def logout(){
+		session.user = null;
+		redirect( uri : "/" );
+	}
 
 }
