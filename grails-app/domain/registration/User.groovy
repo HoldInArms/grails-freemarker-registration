@@ -11,5 +11,8 @@ class User {
 	String email;
 
     static constraints = {
+		id(unique:true);
+		username(unique:true);
+		password(password:true);
     }
 }
