@@ -14,8 +14,7 @@ class RegistrationController {
 		user.save();
 		
 		redirect(
-			controller : "login",
-			action : "index"
+			uri : "/"
 		);
 	}
 }
